@@ -7,7 +7,7 @@ char Q[100];
 char P[100];
 
 int topP=-1;
-int top=-1;
+int top=0;
 
 void push(char e)
 {
@@ -98,13 +98,13 @@ void main()
 		}
 	}
 	
-	while(top != -1)
+	/*while(top != -1)
 	{
 		pop();
 	}
 	
 	P[topP+1] = 
-	'\0';
+	'\0'; */
 	
 	printf("The Postfix expression is: %s\n", P);
 		
