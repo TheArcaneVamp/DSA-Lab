@@ -65,9 +65,9 @@ void main()
 		i++;
 	}
 	
-	Q[i] = ')';
+	Q[i] = ')'; //replacing '\n' by ')'
 	Q[i+1] = '\0';
-	for(i = 0; i< strlen(Q)-1; i++ )
+	for(i = 0; i< strlen(Q); i++ )
 	{
 		if (isdigit(Q[i]))
 		{
@@ -98,13 +98,7 @@ void main()
 		}
 	}
 	
-	/*while(top != -1)
-	{
-		pop();
-	}
-	
-	P[topP+1] = 
-	'\0'; */
+	P[topP+4] = '\0'; 
 	
 	printf("The Postfix expression is: %s\n", P);
 		
